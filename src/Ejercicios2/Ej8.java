@@ -6,7 +6,7 @@ public class Ej8 {
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
 
-		System.out.println("Introduce el cálculo separado por comas:\n"
+		System.out.println("Introduce el cálculo separado por espacios:\n"
 				+ "Valores para el operador:\n"
 				+ "suma\n"
 				+ "resta\n"
@@ -41,6 +41,8 @@ public class Ej8 {
 				break;
 			default:
 				System.out.println("ERROR: Operador incorrecto");
+				teclado.close();
+				return;
 		};
 		
 		if (Double.isNaN(res)) {

@@ -21,7 +21,8 @@ public class Ej6 {
 			if (a1/b1 == -b2/a2) System.out.print("Rectas perpendiculares.");
 			else System.out.print("Rectas secantes.");
 		} else {
-			if ((a1/a2 == b1/b2) && (a1/a2 == c1/c2)) System.out.print("Rectas coincidentes.");
+			// if ((a1/a2 == b1/b2) && (a1/a2 == c1/c2)) System.out.print("Rectas coincidentes.");
+			if (a1/a2 == c1/c2) System.out.print("Rectas coincidentes.");
 			else System.out.print("Rectas paralelas.");
 		};
 		
